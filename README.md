@@ -1,5 +1,6 @@
 # Secure Apache with SSL in Docker
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
 This repository provides a guide for setting up an Apache server with PHP support inside a Docker container, secured with an SSL certificate for local development purposes. 
