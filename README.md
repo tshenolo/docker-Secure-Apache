@@ -2,18 +2,14 @@
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
-This repository provides a detailed guide for setting up an Apache server with PHP support inside a Docker container, secured with an SSL certificate for local development purposes. 
+This repository provides a guide for setting up an Apache server with PHP support inside a Docker container, secured with an SSL certificate for local development purposes. 
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Accessing Your Secure Apache Server](#accessing-your-secure-apache-server)
 - [Conclusion](#conclusion)
 - [License](#license)
-
-## Introduction
-This guide focuses on configuring an Apache server with SSL in Docker, providing a secure, isolated environment for development.
 
 ## Prerequisites
 - Docker installed on your machine.
@@ -23,26 +19,26 @@ This guide focuses on configuring an Apache server with SSL in Docker, providing
 ## Usage
 To use this setup, follow these steps:
 
-1. Clone this repository:
+### 1. Clone this repository:
 
 ```bash
 git clone https://github.com/your-username/docker-Secure-Apache.git
 cd docker-Secure-Apache
 ```
 
-2. Generate the SSL certificate
+### 2. Generate the SSL certificate  
 Before setting up your Docker container, you need to generate a self-signed SSL certificate for localhost. Open a terminal and run the following command:
 ```bash
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -subj "/C=US/ST=YourState/L=YourCity/O=YourOrganization/CN=localhost"
 ```
 This command generates a new SSL certificate (localhost.crt) and a private key (localhost.key), valid for 365 days.
 
-3. Build the Docker container:
+### 3. Build the Docker container:
 ```bash
 docker build -t apache-php-ssl .
 ```
 
-4. Run the container:
+### 4. Run the container:
 ```bash
 docker run -d -p 443:443 apache-php-ssl
 ```
