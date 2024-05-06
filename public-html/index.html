@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Secure Apache with SSL in Docker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dashed #fff;
+            transition: border-bottom-color 0.3s ease-in-out;
+        }
+        a:hover {
+            border-bottom-color: transparent;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex items-center">
-            <div class="text-white mr-6">
-                <a class="text-white no-underline hover:text-gray-300 hover:text-underline" href="#">My Test Site</a>
-            </div>
-            <div class="flex flex-grow">
-                <a class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded" href="#">Home</a>
-                <a class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded" href="#">About</a>
-                <a class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded" href="#">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <header class="bg-white shadow">
-        <div class="container mx-auto p-12 text-center">
-            <h1 class="text-4xl font-bold text-gray-800">Welcome to Your Apache Server</h1>
-            <p class="text-gray-600">This is a test page running on Apache with SSL inside Docker.</p>
-        </div>
-    </header>
+<div class="container">
+    <h1>Secure Apache with SSL in Docker</h1>
+    <p>Set up an Apache server with PHP support inside a Docker container, secured with an SSL certificate for local development purposes.</p>
+    <p>For detailed instructions please visit the GitHub repository:</p>
+    <p><a href="https://github.com/tshenolo/docker-Secure-Apache" target="_blank">Secure Apache with SSL in Docker</a></p>
+</div>
 
-    <main class="py-6 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-gray-800">About This Setup</h2>
-            <p class="text-gray-600 mt-2">This environment is configured with Apache, SSL, and Docker to emulate a secure production server setup.</p>
-        </div>
-    </main>
-
-    <footer class="bg-gray-800 p-6 mt-10">
-        <div class="container mx-auto text-center">
-            <p class="text-white text-sm">Copyright &copy; 2024 All Rights Reserved</p>
-        </div>
-    </footer>
 </body>
 </html>
+
