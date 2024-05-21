@@ -23,7 +23,7 @@ To use this setup, follow these steps:
 ### 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/docker-Secure-Apache.git
+git clone https://github.com/tshenolo/docker-Secure-Apache.git
 cd docker-Secure-Apache
 ```
 
